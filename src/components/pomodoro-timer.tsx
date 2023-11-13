@@ -32,7 +32,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
       setMainTime(mainTime - 1);
       if (working) setFullWorkingTime(fullWorkingTime + 1);
     },
-    timeCounting ? 10 : null,
+    timeCounting ? 1000 : null,
   );
 
   const configureWorking = useCallback(() => {
